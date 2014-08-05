@@ -10,10 +10,10 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
+//= require modernizr.custom.js
+//= require jquery-1.10.2.min.js
 //= require jquery_ujs
 //= require turbolinks
-//= require jquery-1.10.2.min.js
 //= require bootstrap.min.js
 //= require classie.js
 //= require cbpAnimatedHeader.min.js
@@ -24,10 +24,6 @@
 //= require imagesloaded.pkgd.min.js
 //= require isotope.min.js
 //= require jquery.magnific-popup.min.js
-//= require modernizr.custom.js
 //= require jqBootstrapValidation.js
 //= require custom.js
-//= require jquery.flexslider-min.js
-//= require jquery.mb.YTPlayer.js
-//= require less-1.6.1.min.js
 //= require_tree .
