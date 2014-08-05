@@ -21,7 +21,9 @@ Rails.application.load_tasks
         :bio => row[3],
         :twitter_handle => row[4]        
       })
-      puts "Row added!"
+      
     end
+    Fellow.first.destroy
+    puts "Added row, expect 24 fellows"
   end
 
