@@ -1,3 +1,5 @@
+require 'csv'
+
 # Import CSV information about each fellow into database. 
 csv_file_path = 'db/code2040_2014_bios_sheet1.csv'
 
@@ -23,4 +25,10 @@ Dir.glob("#{source_path}/*").each do |image_file_name|
 	base_name=File.basename(image_file_name, File.extname(image_file_name))
 	#this allows us to use an image with any extension
 	Fellow.where('name ILIKE ?', "#{base_name}%").update_all(profile_pic: File.basename(image_file_name))
+end
+
+# Create a slug for each fellow
+Fellow.all.each do |fello|
+  fello.slug = fello.name.downcase.gsub(".", "").gsub(" ", "-")
+  fello.save
 end
