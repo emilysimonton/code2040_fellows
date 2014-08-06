@@ -1,7 +1,8 @@
 class FellowController < ApplicationController
   
   def index
-    @fellows = Fellow.all.sort_by{|fellow| fellow.name}
+    @current_students = Fellow.current_students
+    @alumnae = Fellow.alumnae
   end
 
   def show

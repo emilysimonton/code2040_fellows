@@ -11,6 +11,6 @@
     margin: 80px 0 0;
 }
 
-#featured2 .col-sm-8 {
-	margin-left: 25px;
+#team .col-sm-offset-1 {
+margin-left: 2%;
 }
