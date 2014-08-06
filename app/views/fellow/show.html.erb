@@ -52,7 +52,7 @@
         <div id="owl-example" class="owl-carousel">
           <div class="item">
             <%= image_tag @fellow.profile_pic %>
-            <%= image_tag @fellow.company_logo%>
+            <%= image_tag "company_logos_2014/#{@fellow.company_logo}"%>
             <h4><%= @fellow.company_name %></h4>
             <h5><%= @fellow.title %></h5>
             <%= social_media_helper %>
