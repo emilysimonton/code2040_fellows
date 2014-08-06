@@ -180,8 +180,8 @@
 					}
 				});
 			}
-
-			e.preventDefault();
+			// NOTE! Steph removed this action to make it possible to link back to the main page from a student's profile page.
+			// e.preventDefault();
 		},
 		
 		scrollChange: function() {
