@@ -8,13 +8,14 @@
         :title => row[1],
         :company_name => row[2],
         :bio => row[3],
-        :twitter_handle => row[4]       
+        :twitter_handle => row[4],
+        :year => row[5]     
       })
     end
     Fellow.first.destroy
     puts "Added row, expect 24 fellows"
 
-source_path = Rails.root.join('db', 'fellow_2013_images')
+source_path = Rails.root.join('db', 'fellow_2014_images')
 
 Dir.glob("#{source_path}/*").each do |image_file_name|
 	base_name=File.basename(image_file_name, File.extname(image_file_name))
