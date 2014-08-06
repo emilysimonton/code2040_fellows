@@ -1,6 +1,7 @@
 class FellowController < ApplicationController
   
   def index
+    @fellows = Fellow.all
     @current_students = Fellow.current_students
     @alumnae = Fellow.alumnae
   end

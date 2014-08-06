@@ -27,7 +27,7 @@ class Fellow < ActiveRecord::Base
 
   def self.alumnae
     alumnae = []
-    self.sort_by_name.all.each do |fellow|
+    self.sort_by_name.each do |fellow|
       if !fellow.current_student?
         alumnae << fellow
       end
@@ -37,7 +37,7 @@ class Fellow < ActiveRecord::Base
 
   def self.current_students
     current_students = []
-    self.sort_by_name.all.each do |fellow|
+    self.sort_by_name.each do |fellow|
       if fellow.current_student?
         current_students << fellow
       end 
