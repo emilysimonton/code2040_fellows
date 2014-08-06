@@ -1,6 +1,7 @@
 class FellowController < ApplicationController
   
   def index
+    @fellows = Fellow.all.sort_by{|fellow| fellow.name}
   end
 
   def show
@@ -9,7 +10,7 @@ class FellowController < ApplicationController
 
 	private
 
-	def project_params
+	def fellow_params
 		params.require(:fellow).permit(:name, :slug)
 	end
 

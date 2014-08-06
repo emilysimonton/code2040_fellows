@@ -55,7 +55,7 @@
 
 <!-- Portfolio
 ================================================== -->
-<section class="section-content section-isotope separator" id="projects">
+<section class="section-content" id="projects">
 
   <div class="page-header text-center">
     <h3>Projects</h3>
@@ -71,8 +71,8 @@
       <button data-filter-value=".mobile">mobile</button>
     </div>
     <div class="row demo-3">
-      <div id="portfolio" class="js-isotope grid cs-style-1" data-isotope-options='{ "columnWidth": 200, "itemSelector": ".portfolio-item" }'>
-        <% Fellow.all.each do |fellow| %>
+      <div id="portfolio" class="grid cs-style-1" data-isotope-options='{ "columnWidth": 200, "itemSelector": ".portfolio-item" }'>
+        <% @fellows.each do |fellow| %>
         <div class="col-sm-6 col-md-4 portfolio-item design">
           <figure>     
             <!-- Thumb Info -->
