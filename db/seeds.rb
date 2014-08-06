@@ -19,7 +19,7 @@ Fellow.first.destroy
 puts "Added row, expect 24 fellows"
 
 # Adds images for each fellow to the database. Matches images to fellow in database.
-source_path = Rails.root.join('db', 'fellow_2014_images')
+source_path = Rails.root.join('app', 'assets', 'images', 'profile_pics_2014')
 
 Dir.glob("#{source_path}/*").each do |image_file_name|
 	base_name=File.basename(image_file_name, File.extname(image_file_name))
@@ -27,7 +27,7 @@ Dir.glob("#{source_path}/*").each do |image_file_name|
 	Fellow.where('name ILIKE ?', "#{base_name}%").update_all(profile_pic: File.basename(image_file_name))
 end
 
-company_source_path = Rails.root.join('db', 'company_logos_2014')
+company_source_path = Rails.root.join('app', 'assets', 'images', 'company_logos_2014')
 
 Dir.glob("#{company_source_path}/*").each do |image_file_name|
   base_name=File.basename(image_file_name, File.extname(image_file_name))
