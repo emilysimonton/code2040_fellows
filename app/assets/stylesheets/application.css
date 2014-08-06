@@ -13,7 +13,7 @@
  *= require bootstrap.css
  *= require theme.css
  *= require magnific-popup.css
- *= require font-awesome.min.css
+ *= require font-awesome.css
  *= require_tree .
  *= require_self
  */

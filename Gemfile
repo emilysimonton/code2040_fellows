@@ -6,8 +6,6 @@ gem 'rails', '4.1.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
-gem "pry"
-
 # Use SCSS for stylesheets
 
 gem 'sass-rails', '~> 4.0.3'
@@ -17,6 +15,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
+
+gem "font-awesome-rails"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -41,6 +41,11 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :test, :development do
+  gem 'better_errors'
+  gem 'pry'
+end
 
 gem 'less-rails'
 gem 'therubyracer'
