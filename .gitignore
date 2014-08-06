@@ -17,3 +17,5 @@
 
 #Ignore config/secrets.yml file
 /config/secrets.yml
+
+/db/.DS_Store

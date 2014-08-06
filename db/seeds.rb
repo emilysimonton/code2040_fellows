@@ -1,7 +1,7 @@
 require 'csv'
 
 # Import CSV information about each fellow into database. 
-csv_file_path = 'db/code2040_2014_bios_sheet1.csv'
+csv_file_path = 'db/fellows_data_sheet.csv'
 
 CSV.foreach(csv_file_path) do |row|
   Fellow.create!({
@@ -16,10 +16,12 @@ end
 
 # Gets rid of column headers.
 Fellow.first.destroy
-puts "Added row, expect 24 fellows"
+puts "Added row, expect 47 fellows"
 
 # Adds images for each fellow to the database. Matches images to fellow in database.
+
 source_path = Rails.root.join('app', 'assets', 'images', 'profile_pics_2014')
+
 
 Dir.glob("#{source_path}/*").each do |image_file_name|
 	base_name=File.basename(image_file_name, File.extname(image_file_name))

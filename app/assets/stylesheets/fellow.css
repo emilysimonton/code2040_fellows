@@ -14,3 +14,20 @@
 #team .col-sm-offset-1 {
 margin-left: 2%;
 }
+
+#team .row{
+	margin-top: -22px;
+}
+
+#portfolio .current-student {
+  margin-bottom: 0.15em;
+}
+
+.grid .current-student {
+  display: inline-block;
+  margin: 0;
+ }
+ 
+.current-student {
+  margin-bottom: 0.15em;
+  }

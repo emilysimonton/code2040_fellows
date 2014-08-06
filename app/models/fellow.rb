@@ -27,7 +27,11 @@ class Fellow < ActiveRecord::Base
 
   def self.alumnae
     alumnae = []
+<<<<<<< HEAD
+    self.sort_by_name.each do |fellow|
+=======
     self.all.each do |fellow|
+>>>>>>> 1dd4e187ad6f937b357d2d08129ceafec84bc271
       if !fellow.current_student?
         alumnae << fellow
       end
@@ -37,7 +41,11 @@ class Fellow < ActiveRecord::Base
 
   def self.current_students
     current_students = []
+<<<<<<< HEAD
+    self.sort_by_name.each do |fellow|
+=======
     self.all.each do |fellow|
+>>>>>>> 1dd4e187ad6f937b357d2d08129ceafec84bc271
       if fellow.current_student?
         current_students << fellow
       end 
