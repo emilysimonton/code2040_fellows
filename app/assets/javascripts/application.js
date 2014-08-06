@@ -10,20 +10,19 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require modernizr.custom.js
-//= require jquery-1.10.2.min.js
+//= require modernizr.custom
+//= require jquery-1.10.2.min
 //= require jquery_ujs
-//= require turbolinks
-//= require bootstrap.min.js
-//= require classie.js
-//= require cbpAnimatedHeader.min.js
-//= require owl.carousel.min.js
-//= require scrollReveal.js
-//= require jquery.scrollTo.js
-//= require jquery.nav.js
-//= require imagesloaded.pkgd.min.js
-//= require isotope.min.js
-//= require jquery.magnific-popup.min.js
-//= require jqBootstrapValidation.js
-//= require custom.js
+//= require bootstrap.min
+//= require classie
+//= require cbpAnimatedHeader.min
+//= require owl.carousel.min
+//= require scrollReveal
+//= require jquery.scrollTo
+//= require jquery.nav
+//= require imagesloaded.pkgd.min
+//= require isotope.min
+//= require jquery.magnific-popup.min
+//= require jqBootstrapValidation
+//= require custom
 //= require_tree .
