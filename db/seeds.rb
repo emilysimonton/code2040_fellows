@@ -27,6 +27,14 @@ Dir.glob("#{source_path}/*").each do |image_file_name|
 	Fellow.where('name ILIKE ?', "#{base_name}%").update_all(profile_pic: File.basename(image_file_name))
 end
 
+company_source_path = Rails.root.join('db', 'company_logos_2014')
+
+Dir.glob("#{company_source_path}/*").each do |image_file_name|
+  base_name=File.basename(image_file_name, File.extname(image_file_name))
+  #this allows us to use an image with any extension
+  Fellow.where('company_name ILIKE ?', "#{base_name}%").update_all(company_logo: File.basename(image_file_name))
+end
+
 # Create a slug for each fellow
 Fellow.all.each do |fello|
   fello.slug = fello.name.downcase.gsub(".", "").gsub(" ", "-")
