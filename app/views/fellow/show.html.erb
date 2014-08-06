@@ -43,7 +43,8 @@
 <section id="team" class="dark">
 
   <div class="page-header text-center">
-    
+    <h2><%= @fellow.name %></h2>
+    <h3><%= @fellow.year %></h3>
   </div>
 
   <div class="container">
@@ -51,23 +52,18 @@
       <div class="col-md-12">
         <div id="owl-example" class="owl-carousel">
           <div class="item">
-            <img class="display-pic" src="img/user-avatar4.jpg" alt="Team Member">
-              <h3><%= @fellow.company_name %></h3>
-              <h4><%= @fellow.title %></h4>
-              <%= social_media_helper %>
+            <%= image_tag @fellow.profile_pic %>
+            <h3><%= @fellow.company_name %></h3>
+            <h4><%= @fellow.title %></h4>
+            <%= social_media_helper %>
           </div>
 
           <section id="featured2" class="featured">
 
             <div class="container">
-              <div class="row">
-             
+              <div class="row">         
                 <div class="col-sm-8 col-sm-offset-1">
-                  <div class="vertical-align">
-                    <h2><%= @fellow.name %></h2>
-                    <h3><%= @fellow.year %></h3>
-                    <p><%= @fellow.bio %></p>
-                  </div>
+                  <p><%= @fellow.bio %></p>
                 </div>
               </div>
             </div>
