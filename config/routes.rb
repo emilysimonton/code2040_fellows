@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'fellow/index'
 
-  get 'fellow/show'
+  get 'fellow/:id' => 'fellow#show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
