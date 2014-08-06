@@ -20,6 +20,6 @@ Dir.glob("#{source_path}/*").each do |image_file_name|
 	base_name=File.basename(image_file_name, File.extname(image_file_name))
 	#this allows us to use an image with any extension
 	Fellow.where('name ILIKE ?', "#{base_name}%").update_all(profile_pic: File.basename(image_file_name))
-	# binding.pry
+	# tbinding.pry
 	# Fellow.find_by(name: "Estefania Ortiz").update_attributes(profile_pic: "Estefania.jpg")
 end
