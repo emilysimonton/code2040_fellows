@@ -35,3 +35,23 @@ margin-left: 2%;
 #portfolio .grid .portfolio-item .text {
   display: none;
 }
+
+#fellow-nav{
+  background-color: rgb(52, 74, 88);
+  height: 75px;
+}
+
+#fellow-footer{
+  color: white;
+  background-color: rgb(52, 74, 88);
+}
+
+.fellow-nav-text{
+  height: 75px;
+  color: white;
+}
+
+.cbp-af-header.cbp-af-header-shrink .nav .fellow-nav-text{
+  height: 75px;
+  color: white;
+}
