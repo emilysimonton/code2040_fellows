@@ -1799,6 +1799,15 @@ section .overlay-text {
   position: relative;
   text-align: left;
 }
+
+.grid .portfolio-item .text{
+  display: inline-block;
+  margin: 0;
+  padding: 20px;
+  position: inherit;
+  text-align: center;
+}
+
 .grid figure {
   margin: 0;
   overflow: hidden;
