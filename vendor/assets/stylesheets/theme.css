@@ -747,9 +747,18 @@ section .login-overlay {
   color: #FFF;
   text-align: center;
 }
-.owl-theme-main .owl-item .item img {
-  width: 120px;
-  height: 120px;
+.owl-theme-main .owl-item .item .profile_pic img {
+  width: 240px;
+  height: 240px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.owl-theme-main .owl-item .item .logo img {
+  width: 90px;
+  height: 90px;
   margin: 0 auto;
   display: block;
   border-radius: 10px;
