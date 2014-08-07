@@ -745,7 +745,6 @@ section .login-overlay {
   margin: 10px;
   border-radius: 7px;
   color: #FFF;
-  text-align: center;
 }
 .owl-theme-main .owl-item .item .profile_pic img {
   width: 240px;
@@ -759,10 +758,16 @@ section .login-overlay {
 .owl-theme-main .owl-item .item .logo img {
   width: 90px;
   height: 90px;
-  margin: 0 auto;
+  margin-left: 32px;
   display: block;
   border-radius: 10px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  float: left;
+}
+
+.owl-theme-main .owl-item .item .logo-text img {
+  margin-left: 100px;
+  float: left;
 }
 .owl-theme-main .owl-item .item a.popup-gallery img {
   width: 100%;
@@ -775,12 +780,10 @@ section .login-overlay {
 .owl-theme-main .owl-item .item h3 {
   font-size: 1.7em;
   font-weight: 300;
-  margin: 1em 0;
   color: white;
   text-transform: none;
 }
 .owl-theme-main .owl-item .item h4 {
-  margin: 1em 0;
   font-size: 1.1em;
   font-weight: 300;
   color: white;

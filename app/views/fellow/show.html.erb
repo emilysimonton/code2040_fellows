@@ -56,10 +56,12 @@
             </div>
             <div class="logo">
             <%= image_tag "company_logos_2014/#{@fellow.company_logo}"%>
-          </div>
-            <h4><%= @fellow.company_name %></h4>
-            <h5><%= @fellow.title %></h5>
+            <div class="logo-text">
+              <h4><%= @fellow.company_name %></h4>
+              <h5><%= @fellow.title %></h5>
+            </div>
             <%= social_media_helper %>
+            </div>
           </div>
 
           <section id="featured2" class="featured">
