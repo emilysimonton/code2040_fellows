@@ -198,6 +198,7 @@ function isotope() {
  $container.imagesLoaded( function(){
    $container.isotope({
      // options
+     filter: '.fellow',
      itemSelector: '.portfolio-item',
      layoutMode: 'fitRows'
    });

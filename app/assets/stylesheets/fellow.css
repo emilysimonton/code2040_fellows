@@ -31,3 +31,7 @@ margin-left: 2%;
 .current-student {
   margin-bottom: 0.15em;
   }
+
+#portfolio .grid .portfolio-item .text {
+  display: none;
+}
