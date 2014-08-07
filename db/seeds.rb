@@ -21,7 +21,7 @@ puts "Added row, expect 47 fellows"
 
 # Adds images for each fellow to the database. Matches images to fellow in database.
 
-source_path = Rails.root.join('app', 'assets', 'images', 'profile_pics_2014')
+source_path = Rails.root.join('app', 'assets', 'images')
 
 
 Dir.glob("#{source_path}/*").each do |image_file_name|
