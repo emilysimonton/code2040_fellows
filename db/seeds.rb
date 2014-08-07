@@ -16,8 +16,8 @@ end
 
 # Gets rid of column headers.
 Fellow.first.destroy
-puts Fellow.count 
-puts "Added row, expect 47 fellows"
+puts "this is actual count:" Fellow.count 
+puts "Expects 47 fellows"
 
 # Adds images for each fellow to the database. Matches images to fellow in database.
 
