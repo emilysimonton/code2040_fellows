@@ -21,6 +21,10 @@ class Fellow < ActiveRecord::Base
     fellow.year
   end
 
+  def self.all_years
+    @years = (Fellow.all.sort_by{|fellow| fellow.year}.first.year..Fellow.all.sort_by{|fellow| fellow.year}.last.year)
+  end
+
   def current_student?
     true if self.year == Fellow.current_year
   end
