@@ -116,7 +116,6 @@ window.scrollReveal = new scrollReveal();
 /* --- magnific popup ------------------- */
 
 function magnificPopup() {
-
   // Gallery
   $('.popup-gallery').magnificPopup({
     type: 'image',
@@ -136,6 +135,7 @@ function magnificPopup() {
       close: function() {
         $('.portfolio-item figure figcaption').removeClass('active');
         $('.portfolio-item figure .info').removeClass('active');
+        $('.portfolio-item figure figcaption')
       }
     }
   });

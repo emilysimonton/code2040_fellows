@@ -1778,6 +1778,7 @@ section .overlay-text {
 #portfolio .portfolio-item {
   margin-bottom: 0.15em;
 }
+
 #filters {
   margin-bottom: 1em;
 }
@@ -1822,7 +1823,6 @@ section .overlay-text {
 
 .grid figure {
   margin: 0;
-  overflow: hidden;
   position: relative;
   background-color: rgba(44, 46, 53, 0.7);
   border-radius: 4px;
@@ -1897,6 +1897,7 @@ section .overlay-text {
 .cs-style-1 figure {
   overflow: hidden;
 }
+
 .cs-style-1 figure img,
 .cs-style-1 figure .info {
   transition: all 0.4s;
