@@ -756,8 +756,7 @@ section .login-overlay {
 }
 
 .owl-theme-main .owl-item .item .logo img {
-  width: 90px;
-  height: 90px;
+  width: 50px;
   margin-left: 32px;
   display: block;
   border-radius: 10px;

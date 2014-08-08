@@ -6,49 +6,16 @@
     </div>
 </div>
 
-
-<!-- NAVBAR
-================================================== -->
-<div class="navbar-wrapper cbp-af-header">
-  <div class="container">
-
-    <!-- Fixed navbar -->
-    <div class="navbar cbp-af-inner" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav pull-right">
-            <li><a href="/#intro">About</a></li>
-            <li><a href="/#projects">Current Fellows</a></li>
-            <li class="hidden-sm"><a href="/#team">Alumnae</a></li>
-            <li><a href="/#contact">Apply</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- Team
+<!-- Fellow
 ================================================== -->
 <section id="team" class="dark">
 
-  <div class="page-header text-center">
-    <h2><%= @fellow.name %></h2>
-    <h3><%= @fellow.year %></h3>
-  </div>
-
-  <div class="container">
+  <div id="fellow-show" class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-lg-12">
+        <div class="page-header text-center">
+          <h2><%= @fellow.name %></h2>
+        </div>
         <div id="owl-example" class="owl-carousel">
           <div class="item">
             <div class="profile_pic">
@@ -59,36 +26,25 @@
             <div class="logo-text">
               <h4><%= @fellow.company_name %></h4>
               <h5><%= @fellow.title %></h5>
-            </div>
-            <%= social_media_helper %>
+         
+            </div id="social-media">
+              <%= social_media_helper %>
             </div>
           </div>
-
           <section id="featured2" class="featured">
-
             <div class="container">
               <div class="row">
-                <div class="col-sm-8 col-sm-offset-1">
+                <div class="col-lg-6">
                   <p><%= @fellow.bio %></p>
                 </div>
               </div>
             </div>
-
           </section>
- 
-
         </div>
       </div>
     </div>
   </div>
-
 </section>
-
-<!-- Footer
-================================================== -->
-<footer id="contact" class="footer">
-</footer>
-
 
 <!-- Bootstrap core JavaScript
 ================================================== -->

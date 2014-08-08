@@ -59,3 +59,8 @@ margin-left: 2%;
 .grid figure .info{
   top: 230px;
 }
+
+.owl-theme-main .owl-item .item .logo img {
+margin-right: 15px;
+}
+
