@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  get '/' => 'fellow#index'
-
-  get 'fellow/index'
+  root 'fellow#index'
 
   get 'fellow/:id' => 'fellow#show'
 
