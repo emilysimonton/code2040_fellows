@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  root 'fellow#index'
+  root 'fellows#index'
 
-  get 'fellow/:id' => 'fellow#show'
+  # get 'fellows/:id' => 'fellows#show'
 
-  get '/enter_fellows' => 'fellow#new'
+  # get '/enter_fellows' => 'fellows#new'
+  
+  resources :fellows
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,39 @@
+<%=form_for @fellow do |f|%>
+<div>
+  <%=f.label :name %>
+  <%= f.text_field :name %>
+</div>
+<div>
+  <%=f.label :title %>
+  <%= f.text_field :title %>
+</div>
+<div>
+  <%=f.label :company_name %>
+  <%= f.text_field :company_name %>
+</div>
+<div>
+  <%=f.label :bio %>
+  <%= f.text_area :bio %>
+</div>
+<div>
+  <%=f.label :twitter_handle %>
+  <%= f.text_field :twitter_handle %>
+</div>
+<div>
+  <%=f.label :github_url %>
+  <%= f.text_field :github_url %>
+</div>
+<div>
+  <%=f.label :linkedin_url %>
+  <%= f.text_field :linkedin_url %>
+</div>
+<div>
+  <%=f.label :profile_pic %>
+  <%= f.text_field :profile_pic %>
+</div>
+<div>
+  <%=f.label :company_logo %>
+  <%= f.text_field :company_logo %>
+</div>
+  <%= f.submit %>
+<% end %>
