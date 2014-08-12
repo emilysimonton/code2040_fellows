@@ -14,12 +14,16 @@ class FellowsController < ApplicationController
 
   def new
     @fellow = Fellow.new
+    @current_year = Fellow.current_year
   end
 
-  # def create
-  #   @fellow = Fellow.new(fellow_params)
-  #   unless @fellow.approved?
-  #     :
+  def create
+    @fellow = Fellow.new(fellow_params)
+    @fellow.display = false
+    @fellow.year = Time.now.year
+    @fellow.save
+    redirect_to "/"
+  end
 
 	private
 

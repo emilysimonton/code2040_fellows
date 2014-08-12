@@ -46,6 +46,7 @@
     <div class="row demo-3">
       <div class="grid cs-style-1" data-isotope-options='{ "columnWidth": 200, "itemSelector": ".portfolio-item" }'>
         <% @current_students.each do |fellow| %>
+        <%unless fellow.display == false%>
         <div class="col-sm-6 col-md-3 portfolio-item">
           <figure>     
             <!-- Thumb Info -->
@@ -59,12 +60,13 @@
             <figcaption>
 
 
-              <a href="fellow/<%=fellow.slug%>" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="Open Website">
+              <a href="fellows/<%=fellow.slug%>" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="Open Website">
                 <i class="fa fa-external-link"></i>
               </a>
             </figcaption>
           </figure>
         </div>
+        <%end%>
         <%end%>
       </div>
     </div>
@@ -111,7 +113,7 @@
             <%=image_tag fellow.profile_pic%>
             <!-- Thumb links -->
             <figcaption>
-              <a href="fellow/<%=fellow.slug%>" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="Open Website">
+              <a href="fellows/<%=fellow.slug%>" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="Open Website">
                 <i class="fa fa-external-link"></i>
               </a>
 
