@@ -32,7 +32,7 @@ class Fellow < ActiveRecord::Base
   def self.alumnae
     alumnae = []
     self.all.each do |fellow|
-      if !fellow.current_student?
+      if !fellow.current_student? && fellow.display
         alumnae << fellow
       end
     end
@@ -42,7 +42,7 @@ class Fellow < ActiveRecord::Base
   def self.current_students
     current_students = []
     self.all.each do |fellow|
-      if fellow.current_student?
+      if fellow.current_student? && fellow.display
         current_students << fellow
       end 
     end
