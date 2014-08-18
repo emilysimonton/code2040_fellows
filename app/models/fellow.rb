@@ -48,5 +48,13 @@ class Fellow < ActiveRecord::Base
     end
     current_students
   end
+
+  def self.not_approved
+    for_approval = []
+    self.all.each do |fellow|
+      for_approval << fellow if !fellow.display
+    end
+    for_approval
+  end
     
 end

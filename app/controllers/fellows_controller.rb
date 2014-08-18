@@ -25,6 +25,10 @@ class FellowsController < ApplicationController
     redirect_to "/"
   end
 
+  def approve
+    @fellows = Fellow.not_approved.sort_by{|fellow| fellow.name}
+  end
+
 	private
 
 	def fellow_params

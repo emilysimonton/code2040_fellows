@@ -1,0 +1,126 @@
+<div class="preloader">
+   <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+</div>
+
+<!-- NAVBAR
+================================================== -->
+<div id="fellow-nav" class="cbp-af-header">
+  <div class="container">
+
+    <!-- Fixed navbar -->
+    <div class="navbar cbp-af-inner" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav pull-right">
+            <li><a href="#current-fellows" class="fellow-nav-text">Current Fellows</a></li>
+            <li class="hidden-sm"><a href="#alumnae" class="fellow-nav-text">Alums</a></li>
+            <li><a href="#fellow-footer" class="fellow-nav-text">Apply</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Current Students
+================================================== -->
+<section class="section-content" id = "current-fellows">
+  <div class="container">
+    <div class="page-header text-center">
+      <h2>Incoming Fellows</h2>
+    </div>
+      <p class = "col-md-12">Lorem ipsum dolor sit amet, aliquip feugait ius in, animal suscipit liberavisse an sea. Vis iudico possit referrentur ne.Ancillae scribentur vis et. Modus dicta te qui.
+      Elitr detracto est ei. Eirmod mandamus ea qui, nam in dictas habemus. Ei his congue aeterno fuisset. Te his melius euismod abhorreant. Quem tale vis ea, quo consul adipisci honestatis in. At cum vero accommodare.</p>
+    <div class="row demo-3">
+      <div class="grid cs-style-1" data-isotope-options='{ "columnWidth": 200, "itemSelector": ".portfolio-item" }'>
+        <% @fellows.each do |fellow| %>
+        <div class="col-sm-6 col-md-3 portfolio-item">
+          <figure>     
+            <!-- Thumb Info -->
+            <div class="info">
+              <h3><%=fellow.name%></h3>
+              <span><%=fellow.title%></span>
+            </div>   
+            <!-- Thumbnail -->
+            <%=image_tag fellow.profile_pic%>
+            <!-- Thumb links -->
+            <figcaption>
+              <br>
+
+
+              <a href="fellows/<%=fellow.slug%>" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="Open Website">
+                <i class="fa fa-external-link"></i>
+              </a>
+              <br>
+            </figcaption>
+          </figure>
+        </div>
+        <%end%>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer id="fellow-footer">
+
+  <div class="container">    
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="col-sm-3 col-md-3">
+          <section class="cta text-center">
+
+            <div class="container">
+              
+              <div class="row">
+                <div class="col-lg-12">
+                  <h2>Want to be a Fellow? <span class="highlight">Apply Now!</span></h2>
+                  <a href="https://code2040.cerebrotalent.com/"><button class="btn" url= type="button" role="button">Apply</button></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/assets/jquery-1.10.2.min.js"></script>
+<script src="/assets/bootstrap.min.js"></script>
+<script src="/assets/classie.js"></script>
+<script src="/assets/cbpAnimatedHeader.min.js"></script>
+<script src="/assets/owl.carousel.min.js"></script>
+<script src="/assets/scrollReveal.js"></script>
+<script src="/assets/jquery.scrollTo.js" defer="defer"></script>
+<script src="/assets/jquery.nav.js" defer="defer"></script>
+<script src="/assets/imagesloaded.pkgd.min.js" defer="defer"></script>
+<script src="/assets/isotope.min.js" defer="defer"></script>
+<script src="/assets/jquery.magnific-popup.min.js" defer="defer"></script>
+<script src="/assets/jqBootstrapValidation.js" defer="defer"></script>
+<script src="/assets/custom.js"></script>
+
+<script>
+
+  $(document).ready(function(){
+    isotope();
+  });
+
+</script>
+
+
