@@ -49,3 +49,5 @@ end
 
 gem 'less-rails'
 gem 'therubyracer'
+gem 'activeadmin', github: 'activeadmin/active_admin'
+gem 'devise'

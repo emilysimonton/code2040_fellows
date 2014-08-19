@@ -1,8 +1,8 @@
 class Fellow < ActiveRecord::Base
-
-	def to_param
-		"#{slug}"
-	end
+scope :approval_queue, lambda { where(:display => false) }
+	# def to_param
+	# 	"#{slug}"
+	# end
 
   def self.sort_by_name
     self.all.sort_by do |fellow|

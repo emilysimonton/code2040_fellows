@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   root 'fellows#index'
 
   # get '/enter_fellows' => 'fellows#new'
@@ -8,6 +10,7 @@ Rails.application.routes.draw do
   get 'fellow/new' => 'fellows#new'
   post 'fellows' => 'fellows#create'
   get 'fellow/approve' => 'fellows#approve'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

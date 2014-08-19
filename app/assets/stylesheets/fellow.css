@@ -70,3 +70,9 @@ margin-right: 15px;
 .back-button{
  margin-left: 50px;
 }
+
+section.dark{
+height: 100%;
+position: fixed;
+width: 100%;
+}
