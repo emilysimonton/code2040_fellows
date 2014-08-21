@@ -767,6 +767,7 @@ section .login-overlay {
 .owl-theme-main .owl-item .item .logo-text img {
   margin-left: 100px;
   float: left;
+  color: black;
 }
 .owl-theme-main .owl-item .item a.popup-gallery img {
   width: 100%;
@@ -785,7 +786,7 @@ section .login-overlay {
 .owl-theme-main .owl-item .item h4 {
   font-size: 1.1em;
   font-weight: 300;
-  color: white;
+  color: black;
 }
 .owl-theme-main .owl-item .item p {
   color: white;
