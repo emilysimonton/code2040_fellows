@@ -39,6 +39,7 @@
 <section class="section-content" id = "current-fellows">
   <div class="container">
     <div class="page-header text-center">
+      <% if @current_students.size > 0 %>
       <h2><%=@current_year %> Fellows</h2>
     </div>
       <p class = "col-md-12">Lorem ipsum dolor sit amet, aliquip feugait ius in, animal suscipit liberavisse an sea. Vis iudico possit referrentur ne.Ancillae scribentur vis et. Modus dicta te qui.
@@ -70,6 +71,9 @@
         </div>
         <%end%>
         <%end%>
+        <% else %>
+        <h2> New Fellows coming soon!</h2>
+        <%end%>
       </div>
     </div>
   </div>
@@ -87,7 +91,7 @@
     <div id="filters" class="button-group text-center">
       <button data-filter-value=".fellow" class="active">show all alums</button>
 
-      <%@years.to_a[0..-2].each do |year|%>
+      <%@years.each do |year|%>
         <button data-filter-value=".<%=year%>"><%=year%></button>
         <%end%>
     </div>
@@ -98,12 +102,16 @@
         </div>
         <div class="col-md-12 portfolio-item 2013 text"><p class="text-center">These 18 top computer science students followed in the footsteps of last year's pilot class of five fellows in a 10-week program of mentorship, leadership training, and network development. We were thrilled to have some familiar, and some new <a href="http://code2040.org/partners/">host companies</a> provide the CODE2040 Fellows with the opportunity to work on mission-critical projects.  You can become a Fellow too! Apply at <a href="https://code2040.cerebrotalent.com/">apply.code2040.org.</a></p>
         </div>
+
+        
         <br>
         <% @alumnae.each do |fellow| %>
           <%if fellow.year == 2012%>
         <div class="col-sm-6 col-md-3 portfolio-item 2012 fellow">
           <%elsif fellow.year == 2013%>
         <div class="col-sm-6 col-md-3 portfolio-item 2013 fellow">
+          <%elsif fellow.year == 2014%>
+        <div class="col-sm-6 col-md-3 portfolio-item 2014 fellow">
           <%end%>
           <figure>     
             <!-- Thumb Info -->

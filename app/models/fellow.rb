@@ -1,8 +1,5 @@
 class Fellow < ActiveRecord::Base
 scope :approval_queue, lambda { where(:display => false) }
-	# def to_param
-	# 	"#{slug}"
-	# end
 
   def self.sort_by_name
     self.all.sort_by do |fellow|
@@ -32,7 +29,7 @@ scope :approval_queue, lambda { where(:display => false) }
   def self.alumnae
     alumnae = []
     self.all.each do |fellow|
-      if !fellow.current_student? && fellow.display
+      if !fellow.current_student && fellow.display
         alumnae << fellow
       end
     end
@@ -42,7 +39,7 @@ scope :approval_queue, lambda { where(:display => false) }
   def self.current_students
     current_students = []
     self.all.each do |fellow|
-      if fellow.current_student? && fellow.display
+      if fellow.current_student && fellow.display
         current_students << fellow
       end 
     end
