@@ -18,8 +18,8 @@ scope :approval_queue, lambda { where(:display => false) }
     fellow.year
   end
 
-  def self.all_years
-    @years = (Fellow.all.sort_by{|fellow| fellow.year}.first.year..Fellow.all.sort_by{|fellow| fellow.year}.last.year)
+  def self.past_years
+    @years = (Fellow.alumnae.sort_by{|fellow| fellow.year}.first.year..Fellow.alumnae.sort_by{|fellow| fellow.year}.last.year)
   end
 
   def current_student?
