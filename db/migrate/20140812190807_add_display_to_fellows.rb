@@ -1,5 +1,5 @@
 class AddDisplayToFellows < ActiveRecord::Migration
   def change
-    add_column :fellows, :display, :boolean
+    add_column :fellows, :display, :boolean, :default => false
   end
 end

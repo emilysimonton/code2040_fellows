@@ -1,5 +1,5 @@
 class Fellow < ActiveRecord::Base
-scope :approval_queue, lambda { where(:display => false) }
+scope :approval_queue, lambda { where(:display => nil) }
 
   def self.sort_by_name
     self.all.sort_by do |fellow|
