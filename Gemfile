@@ -47,6 +47,7 @@ group :test, :development do
   gem 'pry'
 end
 
+gem 'carrierwave'
 gem 'less-rails'
 gem 'therubyracer'
 gem 'activeadmin', github: 'activeadmin/active_admin'

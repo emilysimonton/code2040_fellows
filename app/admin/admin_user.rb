@@ -1,5 +1,6 @@
 ActiveAdmin.register AdminUser do
-  permit_params :email, :password, :password_confirmation
+  menu :if => proc{ current_admin_user.super_duper }
+  permit_params :email, :password, :password_confirmation, :super_duper
 
   index do
     selectable_column
@@ -10,6 +11,9 @@ ActiveAdmin.register AdminUser do
     column :created_at
     actions
   end
+
+ # return true if user.super_duper
+        
 
   filter :email
   filter :current_sign_in_at

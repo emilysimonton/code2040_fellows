@@ -32,7 +32,7 @@ class FellowsController < ApplicationController
 	private
 
 	def fellow_params
-		params.require(:fellow).permit(:name, :slug, :bio, :company_name, :company_logo, :title, :twitter_handle, :github_url, :linkdin_url, :profile_pic)
+		params.require(:fellow).permit(:name, :email, :slug, :bio, :company_name, :company_logo, :title, :twitter_handle, :github_url, :linkdin_url, :profile_pic)
 	end
 
 end
